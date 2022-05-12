@@ -35,6 +35,18 @@ molecule verify
 molecule destroy
 ```
 
+### AnsibleGuy Roles
+
+AnsibleGuy Roles use Docker as testing-platform.
+
+These steps have to be performed before running the tests:
+
+1. Add the 'molecule-docker.local' DNS-Record to your '/etc/hosts' file and point it to your docker-server to use.
+2. You will have to add the 'DOCKER_HOST' environmental variable:
+```bash
+export DOCKER_HOST="tcp://molecule-docker.local:2375"
+```
+
 ----
 
 ## Platform
